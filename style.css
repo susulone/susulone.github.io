@@ -1,0 +1,73 @@
+.svg-animation-container {
+	max-width: 55%;
+	margin: auto;
+}
+
+.svg-animation-container svg {
+	width: 100%;
+}
+
+#egg {
+	animation: toppings_movement 4.2s infinite;
+	animation-timing-function: linear;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#fish_cake_upper {
+	animation: toppings_movement 4s infinite;
+	animation-timing-function: linear;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#fish_cake_lower {
+	animation: toppings_movement 4.5s infinite;
+	animation-timing-function: linear;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes toppings_movement {
+	0% {
+		transform: rotate(0deg) translateY(0px);
+	}
+	50% {
+		transform: rotate(179deg) translateY(1.5px);
+	}
+	100% {
+		transform: rotate(359deg) translateY(0px);
+	}
+}
+
+#noodles {
+	animation: noodle_inhale 2s infinite ease-in-out;
+}
+
+@keyframes noodle_inhale {
+	0% {
+		transform: translateY(-5.5px);
+	}
+	100% {
+		transform: translateY(-25px);
+	}
+}
+
+#seaweed {
+	animation: bobbing_seaweed 4s infinite ease-in-out;
+}
+
+@keyframes bobbing_seaweed {
+	0% {
+		transform: translateY(0px);
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: translateY(1px);
+		transform: rotate(0.5deg);
+	}
+	100% {
+		transform: translateY(0px);
+		transform: rotate(0deg);
+	}
+}
